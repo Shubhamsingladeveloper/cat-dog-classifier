@@ -1,6 +1,10 @@
+import pathlib
 import streamlit as st
 from fastai.vision.all import *
 from PIL import Image
+
+
+pathlib.WindowsPath = pathlib.PosixPath
 
 
 # Load trained model
